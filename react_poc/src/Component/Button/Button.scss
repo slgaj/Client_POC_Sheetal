@@ -1,0 +1,11 @@
+@import '../../assets/GlobalCss/global.scss';
+
+.btn-submit {
+    background: $serene-white;
+    padding: $p10 30px 15px;
+    font-weight: $font-wt-mid;
+    color: $sea-green;
+    border: 1px solid $light-grey;
+    border-radius: 4px;
+    margin-top: 15px;
+}
