@@ -21,32 +21,25 @@ class  LoginForm extends React.Component {
     }
 
     handleSubmit (e) { 
-      e.preventDefault();
-      
+        e.preventDefault();  
 
-      for(let i in mydata.Users){
-          if(this.state.username === mydata.Users[i].user && this.state.userpwd === mydata.Users[i].pwd ){
+        for(let i in mydata.Users) {
+            if(this.state.username === mydata.Users[i].user && this.state.userpwd === mydata.Users[i].pwd ){
                 this.setState({
                 loginStatus:true,
                 username:'',
                 userpwd:''
                 }) 
                 
-            }
-            
+            }            
             const { history } = this.props;
-        if (this.state.loginStatus === true) {
-          history.push("/dashboard")
-           
-          }
-             
-      }    
-  
+            if (this.state.loginStatus === true) {
+            history.push("/dashboard")
 
-      
+            }             
+        }         
     }
-    render() {
-        
+    render() {  
           
         
         return (
